@@ -2,6 +2,12 @@
 
 This repo contains the necessary pieces to explore [consul](https://www.hashicorp.com/products/consul) locally.
 
+# Requirements
+
+- go
+- consul
+- envoy
+
 # How to run it
 
 You are going to need a bunch of terminals running (I hope you use a [terminal multiplexer](https://github.com/tmux/tmux)).
