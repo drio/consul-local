@@ -3,6 +3,8 @@
 
 This repo contains the necessary pieces to explore [consul](https://www.hashicorp.com/products/consul) locally.
 
+You can see a video of this process [here](https://www.youtube.com/watch?v=KKJw4tOKiCw).
+
 # Requirements
 
 - go
