@@ -3,7 +3,7 @@
 
 This repo contains the necessary pieces to explore [consul](https://www.hashicorp.com/products/consul) locally.
 
-You can see a video of this process [here](https://vimeo.com/manage/videos/748180645)
+You can see a video of this process [here](https://vimeo.com/manage/videos/748180645).
 
 # Requirements
 
