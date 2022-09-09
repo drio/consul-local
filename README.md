@@ -4,7 +4,7 @@ This repo contains the necessary pieces to explore [consul](https://www.hashicor
 
 # How to run it
 
-You are going to need a bunch of terminals running (I hope you use a [multipler](https://github.com/tmux/tmux)).
+You are going to need a bunch of terminals running (I hope you use a [terminal multiplexer](https://github.com/tmux/tmux)).
 
 1. `make` will start consul.
 
