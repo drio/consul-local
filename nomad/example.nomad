@@ -140,8 +140,7 @@ job "example" {
     # The "count" parameter specifies the number of the task groups that should
     # be running under this group. This value must be non-negative and defaults
     # to 1.
-    #count = 1
-    count = 3
+    count = 1
 
     # The "network" stanza specifies the network configuration for the allocation
     # including requesting port bindings.

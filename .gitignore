@@ -1,2 +1,3 @@
 services/randomer/bin
 services/prometheus/data/*
+services/http-echo/http-echo

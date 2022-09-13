@@ -11,11 +11,11 @@ status:
 ui:
 	open http://localhost:4646
 
-job/doc/init:
-	nomad job init
+job/doc/init/%:
+	nomad job init $*.nomad
 
-job/short/init:
-	nomad job init -short
+job/short/init/%:
+	nomad job init -short $*.nomad
 
 job/run/%:
 	nomad job run $*.nomad
