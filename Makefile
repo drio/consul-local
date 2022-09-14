@@ -4,9 +4,11 @@
 	service/run/frontend service/run/backend
 consul/start:
 	@echo "🙋 Remember to run the intentions *after* starting consul"
+	@echo "NOTE: We won't load the services in ./consul.d"
 	@echo "Press <ENTER> to continue..."
 	@read $$FOO
-	consul agent -dev -node airconsul -config-dir=./consul.d
+	#consul agent -dev -node airconsul -config-dir=./consul.d
+	consul agent -dev -node airconsul
 
 consul/stop:
 	consul config delete -kind service-intentions -name frontend-randomer
@@ -46,6 +48,11 @@ intentions/deny:
 
 intentions/deny/all:
 	consul intention create -deny '*' '*'	
+
+intentions/allow/all:
+	consul intention create -allow '*' '*'	
+
+
 
 service/run/frontend: services/randomer/bin/frontend-randomer
 	BACKEND_URL=http://localhost:7061 services/randomer/bin/frontend-randomer

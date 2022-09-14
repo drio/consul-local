@@ -11,7 +11,7 @@ job "echo" {
 
 		service {
       name = "echo"
-      #tags = [ "urlprefix-/api" ]
+      tags = [ "url-prefix-/echo", "urlprefix-echo.local:9999/"  ]
       port = "5050"
     }
 
