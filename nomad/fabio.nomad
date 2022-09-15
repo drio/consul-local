@@ -1,11 +1,16 @@
+// vim: set ft=hcl
 job "fabio" {
   datacenters = ["dc1"]
 
   group "fabiogroup" {
     count = 1
+
     network {
-      port "fabioport" {
+      port "lb" {
         to = 9999
+      }
+      port "ui" {
+        to = 9998
       }
     }
 
@@ -16,7 +21,7 @@ job "fabio" {
     }
 
     task "server" {
-      driver = "raw_exec"
+      driver = "exec"
 
       config {
         command = "/opt/homebrew/bin/fabio"

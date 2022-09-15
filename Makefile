@@ -30,8 +30,14 @@ fabio:
 	@read $$FOO
 	fabio
 
-kv/del:
-	consul kv put 'fabio/config' 'route del frontend-randomer-sidecar-proxy'
+kv/fabio/add:
+	# echo
+	consul kv put 'fabio/config/echo' 'route add echo  echo.local:9999 http://localhost:5050/'
+	consul kv put 'fabio/config/echo2' 'route add echo2 localhost:9999/echo http://localhost:5050/'
+	consul kv put 'fabio/config/fe-scar-proxy-rm' 'route del frontend-randomer-sidecar-proxy'
+
+kv/fabio/del:
+	consul kv delete -recurse 'fabio/config'
 
 kv/list:
 	consul kv get -recurse

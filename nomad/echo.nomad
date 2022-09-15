@@ -1,3 +1,4 @@
+// vim: set ft=hcl
 job "echo" {
   datacenters = ["dc1"]
 
