@@ -34,7 +34,14 @@ kv/fabio/add:
 	# echo
 	consul kv put 'fabio/config/echo' 'route add echo  echo.local:9999 http://localhost:5050/'
 	consul kv put 'fabio/config/echo2' 'route add echo2 localhost:9999/echo http://localhost:5050/'
+	# rm proxy entry for fe
 	consul kv put 'fabio/config/fe-scar-proxy-rm' 'route del frontend-randomer-sidecar-proxy'
+	# randomer fe
+	consul kv put 'fabio/config/randomer-fe' 'route add randomer-fe randomer.local:9999 http://localhost:7060/'
+	# node-exporter
+	consul kv put 'fabio/config/node-exporter' 'route add node-exporter node-exporter.local:9999 http://localhost:9100/'
+	# prometheus
+	consul kv put 'fabio/config/prometheus' 'route add prometheus prometheus.local:9999 http://localhost:9090/'
 
 kv/fabio/del:
 	consul kv delete -recurse 'fabio/config'
