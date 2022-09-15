@@ -16,7 +16,7 @@ job "echo" {
       port = "5050"
     }
 
-    task "server" {
+    task "echo-bin" {
       driver = "raw_exec"
 
       config {
