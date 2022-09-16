@@ -29,7 +29,7 @@ ehe consul+nomad version. The bridge network mode is not supported under macOS o
 
 In this branch we also run nomad to provide orchestration.
 
-1. Start consul: `make consul`
+1. Start consul: `make`
 
 2. Allow all the services to talk to each other: `make intentions/allow/all`
 
