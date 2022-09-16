@@ -27,12 +27,6 @@ consul/info:
 nomad/start:
 	sudo nomad agent -bind 0.0.0.0 -log-level INFO -dev
 
-fabio:
-	@echo "🙋 Remember to kb/del to remove unwanted routes"
-	@echo "Press <ENTER> to continue..."
-	@read $$FOO
-	fabio
-
 kv/fabio/add:
 	# echo
 	consul kv put 'fabio/config/echo' 'route add echo  echo.local:9999 http://localhost:5050/'

@@ -70,7 +70,7 @@ If you try to access the service via echo.local:9999. It won't work. Until I fig
 does not read the service tags, we have to create the [url-prefix entries](https://fabiolb.net/quickstart/)
 manually.
 
-To do so, run: `cd ../; make kv/fabio/add`. Notice that will add all the necessary prefixes for all the
+To do so, run: `make kv/fabio/add`. Notice that will add all the necessary prefixes for all the
 services. If you are watching the fabio log, you should see the new entries appearing. You can also check the
 fabio UI.
 
