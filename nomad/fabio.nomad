@@ -1,6 +1,7 @@
 // vim: set ft=hcl
 job "fabio" {
   datacenters = ["dc1"]
+  type        = "system"
 
   group "fabiogroup" {
     count = 1
@@ -21,7 +22,7 @@ job "fabio" {
     }
 
     task "server" {
-      driver = "exec"
+      driver = "raw_exec"
 
       config {
         command = "/opt/homebrew/bin/fabio"
