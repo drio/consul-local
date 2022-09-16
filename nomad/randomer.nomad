@@ -11,7 +11,7 @@ job "randomer" {
       }
     }
 
-		service {
+    service {
       name = "fe-randomer"
       port = "7050"
 
@@ -42,7 +42,7 @@ job "randomer" {
       }
     }
 
-		service {
+    service {
       name = "be-randomer"
       port = "7050"
 
