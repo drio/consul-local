@@ -24,6 +24,9 @@ Before we start, make sure you have some local dns entries in your `/etc/hosts`:
 127.0.0.1       echo.local
 ```
 
+Notice I still have to setup proxies to achieve feature parity between the consul version and
+ehe consul+nomad version. The bridge network mode is not supported under macOS only Linux.
+
 In this branch we also run nomad to provide orchestration.
 
 1. Start consul: `make consul`
