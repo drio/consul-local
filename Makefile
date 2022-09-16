@@ -24,6 +24,9 @@ consul/info:
 	@echo "Member list"
 	@consul members
 
+nomad/start:
+	sudo nomad agent -bind 0.0.0.0 -log-level INFO -dev
+
 fabio:
 	@echo "🙋 Remember to kb/del to remove unwanted routes"
 	@echo "Press <ENTER> to continue..."

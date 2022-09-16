@@ -33,7 +33,7 @@ In this branch we also run nomad to provide orchestration.
 
 2. Allow all the services to talk to each other: `make intentions/allow/all`
 
-3. Start nomad: `cd nomad; make`. `nomad status` will show no jobs.
+3. Start nomad: `make nomad/start`. `nomad status` will show no jobs.
 
 4. Let's start fabio via nomad. (from the nomad dir): `nomad job run fabio.nomad`
 
