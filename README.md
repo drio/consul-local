@@ -1,5 +1,5 @@
 
-# Exploring consul locally
+# Exploring consul and nomad locally
 
 This repo contains the necessary pieces to explore [consul](https://www.hashicorp.com/products/consul) locally.
 
