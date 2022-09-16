@@ -1,5 +1,5 @@
 start:
-	sudo nomad agent -dev -bind 0.0.0.0 -log-level INFO
+	sudo nomad agent -bind 0.0.0.0 -log-level INFO -dev driver.raw_exec=1
 
 status:
 	nomad node status
